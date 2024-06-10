@@ -1,34 +1,13 @@
-Feature: Login feature
 
-#common: given will get executed first before all Scenarios
-Background:
-Given user launched login page
+Feature: Login functionality
 
-Scenario:
+Scenario: Login Error Message -1
+	Given I am on the login page
+	When I enter a valid username
+	And I leave the password field empty
+	And I click the login button
+	Then I should see an error message
+	
 
-When User enters valid username 
-And User enters valid password
-And User Click on login button
-Then User should be seeing homepage
-
-#Scenario:
-#
-#When User enters invalid username 
-#And User enters valid password
-#And User Click on login button
-#Then User should be seeing homepage
-#
-#Scenario:
-#
-#When User enters valid username 
-#And User enters invalid password
-#And User Click on login button
-#Then User should be seeing homepage
-#
-#Scenario:
-#
-#When User enters invalid username 
-#And User enters invalid password
-#And User Click on login button
-#Then User should be seeing homepage
-
+	
+ 

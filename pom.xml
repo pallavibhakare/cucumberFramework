@@ -80,8 +80,7 @@
 	    <groupId>io.cucumber</groupId>
 	    <artifactId>cucumber-junit</artifactId>
 	    <version>${cucumberversion}</version>
-	</dependency>
-	
+	</dependency>	
 	<dependency>
 	    <groupId>junit</groupId>
 	    <artifactId>junit</artifactId>

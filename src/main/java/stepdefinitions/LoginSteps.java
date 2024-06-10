@@ -11,43 +11,37 @@ import pages.LoginPage;
 import utils.DataUtils;
 
 public class LoginSteps {
-	
 	static WebDriver driver;
 	static LoginPage lp;
 	
 	@BeforeAll
 	public static void before_or_after_all() {
-		 driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		lp = new LoginPage(driver);
 	}
 	
-	@Given("user launched login page")
-	public void user_launched_login_page() throws IOException {
-	 
-	   driver.get(DataUtils.readLoginTestData("url"));
+	@Given("I am on the login page")
+	public void i_am_on_the_login_page() throws IOException {
+		driver.get(DataUtils.readLoginTestData("url"));
 	}
 
-	@When("User enters valid username")
-	public void user_enters_valid_username() throws IOException {
+	@When("I enter a valid username")
+	public void i_enter_a_valid_username() throws IOException {
 	   lp.usernameField.sendKeys(DataUtils.readLoginTestData("username"));
 	}
 
-	@When("User enters valid password")
-	public void user_enters_valid_password() throws IOException {
-	    lp.passwordField.sendKeys(DataUtils.readLoginTestData("password"));
+	@When("I leave the password field empty")
+	public void i_leave_the_password_field_empty() throws IOException {
+		lp.passwordField.clear();
 	}
 
-	@When("User Click on login button")
-	public void user_click_on_login_button() {
-	    lp.clickLoginButton();
+	@When("I click the login button")
+	public void i_click_the_login_button() {
+		lp.clickLoginButton();
 	}
 
-	@Then("User should be seeing homepage")
-	public void user_should_be_seeing_homepage() {
-	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
+	@Then("I should see an error message")
+	public void i_should_see_an_error_message() {
+	   lp.isErrorMessageDisplayed();
 	}
-
-	
-
 }
