@@ -236,7 +236,7 @@ public class LoginPage extends BasePage{
 	
 	public boolean isHomePageLoaded(WebDriver driver) throws IOException {
 		boolean isHomePage = false;
-//		WaitUtils.waitForElement(driver, loginButton);
+		WaitUtils.waitForElement(driver, loginButton);
 		String actualTitle = driver.getTitle();		
 		//System.out.println("act: "+actualTitle);
 		String expextedTitle= DataUtils.readLoginTestData("homePageTitle");

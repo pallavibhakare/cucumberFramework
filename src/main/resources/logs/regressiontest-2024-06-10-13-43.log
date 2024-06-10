@@ -1,0 +1,13 @@
+2024-06-10-13:43:50 INFO  LoginPage: Checking if username value is entered in username field
+2024-06-10-13:43:51 INFO  LoginPage: Checking if password field is empty
+2024-06-10-13:43:51 INFO  LoginPage: clickLoginButton : Started
+2024-06-10-13:43:53 INFO  LoginPage: Checking if username value is entered in username field
+2024-06-10-13:43:53 INFO  LoginPage: enterPassword : Started
+2024-06-10-13:43:53 INFO  Entered password
+2024-06-10-13:43:53 INFO  LoginPage: clickLoginButton : Started
+2024-06-10-13:43:58 INFO  LoginPage: Checking if username value is entered in username field
+2024-06-10-13:43:58 INFO  LoginPage: enterUsername : Started
+2024-06-10-13:43:58 INFO  Entered wrong Username 123
+2024-06-10-13:43:58 INFO  LoginPage: enterWrongPassword : Started
+2024-06-10-13:43:59 INFO  Entered wrong Password
+2024-06-10-13:43:59 INFO  LoginPage: clickLoginButton : Started
